@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="form,input,section,nav" />
+  <title>Contacto para pedido</title>
+  <link rel="stylesheet" href="./estilos/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+  <!--Estilos especificos-->
+  <style>
+    main.pedido-page {
+      display: grid;
+      gap: 4rem;
+      padding: 4rem 6vw;
+      background-color: var(--color-fondo);
+    }
+
+    .proceso-pedido {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .paso {
+      background-color: white;
+      border-radius: 1rem;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .paso h2 {
+      font-family: var(--font-titulo);
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+      color: var(--color-primario);
+    }
+
+    .paso p {
+      font-size: 1rem;
+      color: var(--color-texto);
+      line-height: 1.6;
+    }
+
+    .formulario-contacto form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      background: white;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .formulario-contacto input,
+    .formulario-contacto textarea {
+      padding: 0.75rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 0.5rem;
+    }
+
+    .formulario-contacto button {
+      align-self: flex-start;
+      padding: 0.75rem 1.5rem;
+      background: var(--color-secundario);
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 0.5rem;
+      cursor: pointer;
+    }
+
+    .faq {
+      display: grid;
+      gap: 2rem;
+    }
+
+    .faq-item {
+      display: flex;
+      flex-direction: column;
+      background: white;
+      padding: 1.5rem;
+      border-radius: 1rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .faq-item h3 {
+      font-family: var(--font-titulo);
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .faq-item p {
+      font-size: 1rem;
+      color: var(--color-texto);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <!--Logo-->
+    <div class="logo">
+      <img src="./img/logo.png" height="50px"/>
+    </div>
+
+    <!--Enlaces entre páginas del proyecto-->
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="sabores.html">Sabores</a></li>
+        <li><a href="proceso.html">Proceso</a></li>
+        <li><a href="pedido.html">Pedido</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="pedido-page">
+    <h1>Haz tu Pedido Artesanal</h1>
+
+    <!--Sección de "pasos"-->
+    <section class="proceso-pedido">
+      <!--Paso 1-->
+      <div class="paso">
+        <h2>1. Elige tus sabores</h2>
+        <p>Explora nuestra variedad y decide entre los sabores clásicos o ediciones especiales.</p>
+      </div>
+      <!--Paso 2-->
+      <div class="paso">
+        <h2>2. Personaliza tu caja</h2>
+        <p>Selecciona la cantidad y combínalos como más te guste.</p>
+      </div>
+      <!--Paso 3-->
+      <div class="paso">
+        <h2>3. Envío o recogida</h2>
+        <p>Decide si quieres que lo enviemos a tu casa o pasar a recogerlo.</p>
+      </div>
+      <!--Paso 4-->
+      <div class="paso">
+        <h2>4. Confirmación</h2>
+        <p>Te contactaremos por correo para finalizar detalles y método de pago.</p>
+      </div>
+    </section>
+
+    <!--Formulario de contacto para pedido-->
+    <section class="formulario-contacto">
+      <h2>Contacto para Pedido</h2>
+      <form>
+        <input type="text" placeholder="Nombre completo" required />
+        <input type="email" placeholder="Correo electrónico" required />
+        <textarea rows="4" placeholder="¿Qué te gustaría pedir?"></textarea>
+        <button type="submit">Enviar pedido</button>
+      </form>
+    </section>
+
+    <!--Sección de "Preguntas frecuentes" (faq)-->
+    <section class="faq">
+      <!--Pregunta 1-->
+      <div class="faq-item">
+        <h3>¿Cuál es el tiempo de entrega?</h3>
+        <p>Entre 2 y 5 días hábiles, dependiendo de tu ubicación.</p>
+      </div>
+      <!--Pregunta 2-->
+      <div class="faq-item">
+        <h3>¿Puedo hacer un pedido personalizado?</h3>
+        <p>Sí, puedes elegir sabores, cajas y mensajes personalizados.</p>
+      </div>
+      <!--Pregunta 3-->
+      <div class="faq-item">
+        <h3>¿Cuáles son los métodos de pago?</h3>
+        <p>Aceptamos transferencias, Bizum y pagos al recoger.</p>
+      </div>
+    </section>
+  </main>
+
+  <!--Footer-->
+    <footer>
+      <!--Texto genérico-->
+      <p>&copy; 2025 Chocolatería Artesanal. Todos los derechos reservados.</p>
+      <div class="rrss">
+        <!--Enlaces a ninguna parte-->
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">Contacto</a>
+      </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="section,nav" />
+  <title>Sabores de Nuestra Chocolatería</title>
+  <link rel="stylesheet" href="./estilos/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+  <!--Estilos especificos-->
+  <style>
+    .catalogo-sabores {
+        padding: 4rem 6vw;
+        display: grid;
+        gap: 6rem;
+    }
+
+    .catalogo-sabores h1 {
+        text-align: center;
+        font-family: var(--font-titulo);
+        font-size: 2.5rem;
+        background-color: #fff1e4;
+    }
+
+    .sabor {
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        gap: 3rem;
+        align-items: center;
+    }
+
+    .sabor.invertido {
+        direction: rtl;
+    }
+
+    .sabor.invertido .sabor-detalles {
+        direction: ltr;
+    }
+
+    .sabor-imagen {
+        height: 350px;
+        border-radius: 1rem;
+        background-size: cover;
+        background-position: center;
+        box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .sabor-detalles {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .sabor-detalles h2 {
+        font-family: var(--font-titulo);
+        font-size: 2rem;
+    }
+
+    .detalle-extra {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        font-size: 0.95rem;
+        opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <!--Logo-->
+    <div class="logo">
+      <img src="./img/logo.png" height="50px"/>
+    </div>
+
+    <!--Enlaces entre páginas del proyecto-->
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="sabores.html">Sabores</a></li>
+        <li><a href="proceso.html">Proceso</a></li>
+        <li><a href="pedido.html">Pedido</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="catalogo-sabores">
+    <h1>Nuestros Sabores Especiales</h1>
+
+    <!--Sección de producto 1-->
+    <section class="sabor">
+      <!--Imagen-->
+      <div class="sabor-imagen" style="background-image: url('./img/Bombon-clasico.jpg'); background-size: 80%; background-repeat: no-repeat;"></div>
+      
+      <!--Contenido-->
+      <div class="sabor-detalles">
+        <h2>Bombón Clásico</h2>
+        <p>Chocolate negro 70% con relleno de praliné tradicional. Inspirado en recetas europeas, nuestro clásico es ideal para los que aman lo intenso.</p>
+        <div class="detalle-extra">
+          <p><strong>Notas:</strong> Agradable amargor, cremosidad persistente.</p>
+          <p><strong>Maridaje:</strong> Café fuerte, vino tinto joven.</p>
+        </div>
+      </div>
+      
+    </section>
+
+    <!--Sección de producto 2-->
+    <section class="sabor invertido">
+      <!--Imagen-->
+      <div class="sabor-imagen" style="background-image: url('./img/maracuya-blanco.jpg'); background-size: 80%; background-repeat: no-repeat;"></div>
+      
+      <!--Contenido-->
+      <div class="sabor-detalles">
+        <h2>Maracuyá Blanco</h2>
+        <p>Base de chocolate blanco con un relleno vibrante de fruta de la pasión. Refrescante, tropical y sorprendente.</p>
+        <div class="detalle-extra">
+          <p><strong>Notas:</strong> Dulce y ácido en equilibrio.</p>
+          <p><strong>Ideal para:</strong> Verano, celebraciones especiales.</p>
+        </div>
+      </div>
+
+    </section>
+
+    <!--Sección de producto 3-->
+    <section class="sabor">
+      <!--Imagen-->
+      <div class="sabor-imagen" style="background-image: url('./img/especias-del-sur.jpg'); background-size: 80%; background-repeat: no-repeat;"></div>
+      
+      <!--Contenido-->
+      <div class="sabor-detalles">
+        <h2>Especias del Sur</h2>
+        <p>Chocolate con leche infusionado con canela, cardamomo y un toque de clavo. Un sabor cálido y reconfortante.</p>
+        <div class="detalle-extra">
+          <p><strong>Inspiración:</strong> Sabores del Magreb y cocina india.</p>
+          <p><strong>Textura:</strong> Cremosa con final especiado.</p>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <!--Footer-->
+    <footer>
+      <!--Texto genérico-->
+      <p>&copy; 2025 Chocolatería Artesanal. Todos los derechos reservados.</p>
+      <div class="rrss">
+        <!--Enlaces a ninguna parte-->
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">Contacto</a>
+      </div>
+    </footer>
+</body>
+</html>

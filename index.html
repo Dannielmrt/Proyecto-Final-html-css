@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="hero,section,nav" />
+  <title>Tienda de Chocolate Artesanal</title>
+  <link rel="stylesheet" href="./estilos/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <!--Logo-->
+    <div class="logo">
+      <img src="./img/logo.png" height="50px" />
+    </div>
+
+    <!--Enlaces entre páginas del proyecto-->
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="sabores.html">Sabores</a></li>
+        <li><a href="proceso.html">Proceso</a></li>
+        <li><a href="pedido.html">Pedido</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!--Se ha elejido usar un hero por las facilidades que da al momento de hacer la estructura de la sección y por su practicidad-->
+    <!--Idea tomada de las prácticas con mjml-->
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Chocolate que abraza los sentidos</h1>
+        <p>Producto artesanal y de calidad máxima</p>
+        <a href="sabores.html" class="btn-cta">Descubrelo aquí</a>
+      </div>
+    </section>
+
+    <!--Sección de "Productos más vendidos"-->
+    <section id="sabores" class="sabores">
+      <h2>Productos más vendidos</h2>
+      <div class="grid-sabores">
+        <!--Producto 1-->
+        <div class="card">
+          <div class="imagen-producto">
+            <img src="./img/Bombon-clasico.jpg" height="120%" />
+          </div>
+          <h3>Bombón Clásico</h3>
+          <p>Chocolate negro 70% con relleno de praliné.</p>
+          <span class="precio">€3.00</span>
+        </div>
+        <!--Producto 2-->
+        <div class="card">
+          <div class="imagen-producto">
+            <img src="./img/maracuya-blanco.jpg" height="120%" />
+          </div>
+          <h3>Maracuyá Blanco</h3>
+          <p>Chocolate blanco con corazón de fruta tropical.</p>
+          <span class="precio">€3.50</span>
+        </div>
+        <!--Producto 3-->
+        <div class="card">
+          <div class="imagen-producto">
+            <img src="./img/especias-del-sur.jpg" height="120%" />
+          </div>
+          <h3>Especias del Sur</h3>
+          <p>Chocolate con leche y mezcla de canela y cardamomo.</p>
+          <span class="precio">€3.20</span>
+        </div>
+      </div>
+    </section>
+
+    <!--Sección de "Elaboración artesanal"-->
+    <section id="proceso" class="proceso">
+      <h2>Elaboración Artesanal</h2>
+      <div class="pasos">
+        <!--Paso 1-->
+        <div class="paso">
+          <div>
+            <img class="icono" src="./img/seleccion-cacao.jpg" width="140px" />
+          </div>
+          <h3>Selección</h3>
+          <p>Escogemos el mejor cacao de origen controlado.</p>
+        </div>
+        <!--Paso 2-->
+        <div class="paso">
+          <div class="icono">
+            <img class="icono" src="./img/mezcla-cacao.jpg" width="140px" />
+          </div>
+          <h3>Mezcla</h3>
+          <p>Unimos ingredientes naturales sin aditivos.</p>
+        </div>
+        <!--Paso 3-->
+        <div class="paso">
+          <div class="icono">
+            <img class="icono" src="./img/moldeo-cacao.jpg" width="140px" />
+          </div>
+          <h3>Moldeo</h3>
+          <p>Moldeamos a mano cada pieza.</p>
+        </div>
+        <!--Paso 4-->
+        <div class="paso">
+          <div class="icono">
+            <img class="icono" src="./img/empaque-chocolates.webp" width="140px" />
+          </div>
+          <h3>Empaque</h3>
+          <p>Empacamos con materiales reciclables y amor.</p>
+        </div>
+      </div>
+    </section>
+
+    <!--Footer-->
+    <footer>
+      <!--Texto genérico-->
+      <p>&copy; 2025 Chocolatería Artesanal. Todos los derechos reservados.</p>
+      <div class="rrss">
+        <!--Enlaces a ninguna parte-->
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">Contacto</a>
+      </div>
+    </footer>
+</body>
+
+</html>

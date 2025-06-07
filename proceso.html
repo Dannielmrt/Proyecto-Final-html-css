@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="section,nav" />
+  <title>Proceso Artesanal de Nuestro Chocolate</title>
+  <link rel="stylesheet" href="./estilos/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+  <!--Estilos especificos-->
+  <style>
+    main.proceso-page {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 4rem;
+      padding: 4rem 6vw;
+      background-color: var(--color-fondo);
+    }
+
+    .etapas {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 3rem;
+    }
+
+    .etapa {
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      border-radius: 1rem;
+      padding: 2rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      gap: 1.5rem;
+    }
+
+    .etapa-imagen {
+      width: 100%;
+      height: 200px;
+      border-radius: 1rem;
+      display: flex;
+      justify-content: center;
+      text-justify: center;
+    }
+
+    .etapa-detalles h2 {
+      font-family: var(--font-titulo);
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .etapa-detalles p {
+      font-size: 1rem;
+      color: var(--color-texto);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <!--Logo-->
+    <div class="logo">
+      <img src="./img/logo.png" height="50px"/>
+    </div>
+
+    <!--Enlaces entre páginas del proyecto-->
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="sabores.html">Sabores</a></li>
+        <li><a href="proceso.html">Proceso</a></li>
+        <li><a href="pedido.html">Pedido</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="proceso-page">
+    <!--Sección proceso de elaboracion por etapas-->
+    <h1>Proceso de Elaboración Artesanal</h1>
+
+    <!--Etapa 1-->
+    <section class="etapas">
+      <div class="etapa">
+        <!--Imagen-->
+        <div class="etapa-imagen">
+          <img src="./img/seleccion-cacao.jpg" height="100%"/>
+        </div>
+         <!--Contenido-->
+        <div class="etapa-detalles">
+          <h2>1. Selección del Cacao</h2>
+          <p>Trabajamos directamente con productores de comercio justo que cultivan el mejor cacao criollo y forastero.</p>
+        </div>
+      </div>
+
+      <!--Etapa 2-->
+      <div class="etapa">
+         <!--Imagen-->
+        <div class="etapa-imagen">
+          <img src="./img/mezcla-cacao.jpg" height="100%"/>
+        </div>
+         <!--Contenido-->
+        <div class="etapa-detalles">
+          <h2>2. Mezcla Natural</h2>
+          <p>Unimos el cacao con ingredientes como frutas secas, especias o pralinés, sin ningún aditivo químico.</p>
+        </div>
+      </div>
+
+      <!--Etapa 3-->
+      <div class="etapa">
+         <!--Imagen-->
+        <div class="etapa-imagen">
+          <img src="./img/moldeo-cacao.jpg" height="100%"/>
+        </div>
+         <!--Contenido-->
+        <div class="etapa-detalles">
+          <h2>3. Moldeo Manual</h2>
+          <p>Cada pieza se vierte en moldes a mano, asegurando una forma perfecta y una textura inigualable.</p>
+        </div>
+      </div>
+
+      <!--Etapa 4-->
+      <div class="etapa">
+         <!--Imagen-->
+        <div class="etapa-imagen">
+          <img src="./img/empaque-chocolates2.jpg" height="100%"/>
+        </div>
+         <!--Contenido-->
+        <div class="etapa-detalles">
+          <h2>4. Empaque Sostenible</h2>
+          <p>Nuestros productos se presentan en envoltorios biodegradables y reciclables, cuidando el medio ambiente.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!--Footer-->
+    <footer>
+      <!--Texto genérico-->
+      <p>&copy; 2025 Chocolatería Artesanal. Todos los derechos reservados.</p>
+      <div class="rrss">
+        <!--Enlaces a ninguna parte-->
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">Contacto</a>
+      </div>
+    </footer>
+</body>
+</html>
